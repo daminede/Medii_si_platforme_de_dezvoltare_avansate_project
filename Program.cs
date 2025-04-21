@@ -7,25 +7,46 @@ namespace AnimalSounds
     {
         static void Main(string[] args)
         {
-            var animals = new List<Animal>
-            {
-                new Animal { Type = "Dog", Sound = "Bark" },
-                new Animal { Type = "Cat", Sound = "Meow" },
-                new Animal { Type = "Cow", Sound = "Moo" },
-                new Animal { Type = "Sheep", Sound = "Baa" },
-                new Animal { Type = "Duck", Sound = "Quack" }
-            };
+            Console.WriteLine("Welcome to the Animal Sounds App!");
+            Console.WriteLine("Enter the name of an animal (e.g., Dog, Cat, Cow, Sheep, Duck) to hear its sound:");
+            Console.WriteLine("Type 'exit' to quit the application.");
 
-            foreach (var animal in animals)
+            var animalTypes = new List<string> { "Dog", "Cat", "Cow", "Sheep", "Duck" };
+
+            while (true)
             {
-                Console.WriteLine($"{animal.Type} makes sound: {animal.Sound}");
+                Console.Write("\nEnter animal name: ");
+                string input = Console.ReadLine()?.Trim();
+
+                if (string.Equals(input, "exit", StringComparison.OrdinalIgnoreCase))
+                {
+                    Console.WriteLine("Goodbye!");
+                    break;
+                }
+
+                if (animalTypes.Exists(a => string.Equals(a, input, StringComparison.OrdinalIgnoreCase)))
+                {
+                    var animal = CreateAnimal(input);
+                    animal.MakeSound();
+                }
+                else
+                {
+                    Console.WriteLine($"Invalid animal type: {input}. Please try again.");
+                }
             }
         }
-    }
 
-    class Animal
-    {
-        public string Type { get; set; }
-        public string Sound { get; set; }
+        private static IAnimal CreateAnimal(string type)
+        {
+            return type.ToLower() switch
+            {
+                "dog" => new Dog(),
+                "cat" => new Cat(),
+                "cow" => new Cow(),
+                "sheep" => new Sheep(),
+                "duck" => new Duck(),
+                _ => throw new InvalidOperationException($"Invalid animal type: {type}.")
+            };
+        }
     }
 }
