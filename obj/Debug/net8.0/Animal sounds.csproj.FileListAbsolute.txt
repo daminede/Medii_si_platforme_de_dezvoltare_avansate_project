@@ -1,0 +1,14 @@
+C:\Users\uif44780\source\repos\Animal sounds\bin\Debug\net8.0\Animal sounds.exe
+C:\Users\uif44780\source\repos\Animal sounds\bin\Debug\net8.0\Animal sounds.deps.json
+C:\Users\uif44780\source\repos\Animal sounds\bin\Debug\net8.0\Animal sounds.runtimeconfig.json
+C:\Users\uif44780\source\repos\Animal sounds\bin\Debug\net8.0\Animal sounds.dll
+C:\Users\uif44780\source\repos\Animal sounds\bin\Debug\net8.0\Animal sounds.pdb
+C:\Users\uif44780\source\repos\Animal sounds\obj\Debug\net8.0\Animal sounds.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\uif44780\source\repos\Animal sounds\obj\Debug\net8.0\Animal sounds.AssemblyInfoInputs.cache
+C:\Users\uif44780\source\repos\Animal sounds\obj\Debug\net8.0\Animal sounds.AssemblyInfo.cs
+C:\Users\uif44780\source\repos\Animal sounds\obj\Debug\net8.0\Animal sounds.csproj.CoreCompileInputs.cache
+C:\Users\uif44780\source\repos\Animal sounds\obj\Debug\net8.0\Animal sounds.dll
+C:\Users\uif44780\source\repos\Animal sounds\obj\Debug\net8.0\refint\Animal sounds.dll
+C:\Users\uif44780\source\repos\Animal sounds\obj\Debug\net8.0\Animal sounds.pdb
+C:\Users\uif44780\source\repos\Animal sounds\obj\Debug\net8.0\Animal sounds.genruntimeconfig.cache
+C:\Users\uif44780\source\repos\Animal sounds\obj\Debug\net8.0\ref\Animal sounds.dll
